@@ -7,15 +7,16 @@ Then, in the [second notebook](2-Correlations.ipynb) we show how the IDD is esse
 
 ![Funnel image](figs/funnel-idd-21-2017-50.png)
 
-This evidence is corroborated by the (very low) correlations of the IDDs of the same course between 2014 and 2017, which is only 0.22. The correlation between course quality measurements taken three years apart amount to a test-retest reliabity estimate. Here's how the correlation for one area looks like (every point represents the IDD of course in 2014 and 2017)
+This evidence is corroborated by the (very low) correlations of the IDDs of the same course between 2014 and 2017, which is only 0.22. The correlation between course quality measurements taken three years apart amounts to a test-retest reliabity estimate. Here's how the correlation for one area looks like (every point represents the IDD of course in 2014 and 2017)
 
 ![correlation for area 21](figs/corr-21-14-17-50.png)
-
-The correlations are obviously and unacceptably low. 
 
 Here are the correlations for all areas. In this graph we also show that the ENADE indicator (the raw results from the ENADE standardized test that graduates take) has better reliability, indicating that there is a problem with the way the IDD is calculated, aside from measurement uncertainties.
 
 ![Correlation image](figs/corrs-14-17-50.png)
+
+
+Although at first sight the correlations seem very low for reliability estimates, one could argue that it's not necessarily expected that a course presents the same or even similar quality indicators three years apart. After all, courses can change or adapt. Such a hypothetical adaptibility to quality assessment indicators One way to   
 
 
 In the [third notebook](3-CalculateIDDs.ipynb) we take the IDD microdata and reproduce the IDDs that INEP calculated. Briefly, INEP uses a varying intercept model to regress the ENADE score of students on the ENEM score they had when they entered the course. The idea is we "control for" the ENEM score (taking it as a proxy for student characteristics).The part of ENADE that is not explained by ENEM (the sum of the residuals) can then be taken as an indicator for course quality. To show schematically how this would work, see this figure:
